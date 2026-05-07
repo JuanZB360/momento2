@@ -4,7 +4,7 @@ import { homeView } from "./homeView.js";
 
 export function Home() {
     
-    const body = document.querySelector('body');
+    const body = document.querySelector('#app');
     body.innerHTML = homeView();
 
     const login = document.querySelector('.login');

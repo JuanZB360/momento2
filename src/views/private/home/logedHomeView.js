@@ -2,11 +2,8 @@ export function logedHomeView() {
     return `
         <div class="relative w-full h-dvh bg-[#0F172A] overflow-hidden flex flex-col">
 
-            <main id="contenedorPrincipal" class="flex-1 w-full overflow-y-auto custom-scrollbar">
-                
-                <div class="p-6 text-slate-500 text-center mt-20">
-                    Selecciona una opción del menú para comenzar...
-                </div>
+            <main id="contenedorPrincipal" class="flex-1 w-full overflow-y-auto custom-scrollbar no-scrollbar">
+                            
             </main>
 
             <div class="bottomLogOut absolute right-1 top-1 p-2 rounded-2xl hover:scale-105 hover:bg-amber-500/10 active:scale-95 transition-colors">
@@ -14,11 +11,9 @@ export function logedHomeView() {
                     alt="savings" class="w-10 h-10 object-contain opacity-70 group-hover:opacity-100 transition-opacity">
             </div>
 
-            <div class="absolute bottom-6 left-0 w-full flex justify-center items-center px-4 pointer-events-none">
-                <nav class="flex justify-around items-center w-full max-w-md h-20 
-                            bg-slate-900/80 backdrop-blur-xl 
-                            border border-slate-700/50 rounded-[2.5rem] 
-                            shadow-2xl shadow-black/50 pointer-events-auto px-2">
+            <div class="fixed bottom-0 left-0 w-full flex justify-center items-center px-4 pb-6 pt-4 pointer-events-none z-[60]">
+                
+                <nav class="flex justify-around items-center w-full max-w-md h-20 bg-slate-900 border border-slate-700/50 shadow-2xl shadow-black pointer-events-auto px-2 ">
                     
                     <ul class="flex justify-around items-center w-full gap-1">
                         

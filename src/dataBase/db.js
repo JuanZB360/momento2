@@ -66,6 +66,14 @@ export function updateSavings(user, updateSaving) {
     return message;
 }
 
+export function getSavings(user){
+    let logedUser = db.find(u => u.email === user.email);
+    if (logedUser) {
+        return logedUser.savingsGoals;
+    }
+    return [];
+}
+
 export function getSubtotal(user) {
     let logedUser = db.find(u => u.email === user.email);
     let value = {

@@ -56,8 +56,5 @@ export function profileEvent() {
         contenedorAhorrosPerfil.append(div);
         
     });
-    
-
-    
 
 }

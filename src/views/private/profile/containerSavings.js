@@ -9,7 +9,8 @@ export function containerSavings(name, target, percentage) {
                 <span class="avamce text-xs font-black">${percentage}%</span>
             </div>
             <div class="w-full bg-emerald-950 h-3 border border-emerald-900 p-[2px]">
-                <div class="w-[${percentage}%] bg-emerald-500 h-full shadow-[0_0_10px_#10b981]" ></div>
+                <div class="w-[${percentage}%] 
+                bg-emerald-500 h-full shadow-[0_0_10px_#10b981]" ></div>
             </div>
         </article>
     `;

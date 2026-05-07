@@ -62,8 +62,29 @@ export function registerEvent() {
                 name: formData.get('name'),
                 email: formData.get('email'),
                 password: formData.get('password'),
-                transactions: [],
-                savingsGoals: []
+                transactions: [
+                    {
+                        type: "income",
+                        name: "salario",
+                        category: "pago mensual",
+                        value: 2400000,
+                        date: new Date().toString()
+                    },
+                    {
+                        type: "expense",
+                        name: "arriendo",
+                        category: "pago mensual",
+                        value: 450000,
+                        date: new Date().toString()
+                    },
+                ],
+                savingsGoals: [
+                    {
+                        name: "Moto",
+                        target: 8000000,
+                        current: 4000000
+                    }
+                ]
             }
 
             console.log(user);
